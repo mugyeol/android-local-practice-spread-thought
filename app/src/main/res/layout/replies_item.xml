@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/reply_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/profile_replies"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/profile"
+            android:layout_marginLeft="13dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+        <!--<LinearLayout-->
+            <!--android:id="@+id/Nick_and_comment"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:orientation="vertical"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/profile_replies"-->
+            <!--app:layout_constraintTop_toTopOf="parent">-->
+
+            <TextView
+                android:id="@+id/replier_replies"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="유저아이디"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toTopOf="@id/profile_replies"
+                app:layout_constraintLeft_toRightOf="@+id/profile_replies"
+                android:layout_marginLeft="20dp"
+                />
+<TextView
+    android:id="@+id/swipe_to_delete"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="밀어서 삭제하기"
+    app:layout_constraintTop_toTopOf="parent"
+    android:textSize="11dp"
+    android:textColor="@color/colorPrimary"
+    app:layout_constraintRight_toRightOf="parent"
+    />
+            <TextView
+                android:id="@+id/contents_replies"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="댓글"
+                android:textSize="13dp"
+                android:textColor="#000000"
+
+                app:layout_constraintLeft_toLeftOf="@+id/replier_replies"
+                app:layout_constraintTop_toBottomOf="@+id/replier_replies"
+                android:layout_marginTop="2dp"
+
+
+
+                />
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/date_replies"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="YYYY.MM.DD"-->
+            <!--android:textSize="13dp"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/replier_replies"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/replier_replies" />-->
+
+
+    </android.support.constraint.ConstraintLayout>
+    <View
+        android:id="@+id/Line_READ"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#088A29</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="status_bar_color">#088A29</color>
+    <color name="text_onIMG">#000000</color>
+    <color name="imageBacground">#000000</color>
+    <color name="TEXT_COMEOUT">#FFFFFF</color>
+    <color name="ViewColor">#e1e1e1</color>
+    <color name="light_gray">#a1a1a1</color>
+    <color name="black">#000000</color>
+    <color name="transparentblack">#56000000</color>
+    <color name="transparent">#00000000</color>
+
+</resources>
+<!--#848484-->

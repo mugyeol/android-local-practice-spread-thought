@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mypage_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="13dp"
+        android:padding="5dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/go_previous_timeline"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/previouspage"
+            android:tint="@color/text_onIMG"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/headtittle_mypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Page"
+            android:textSize="17dp"
+            android:textColor="@color/text_onIMG"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/to_write"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/penstyle_black"
+            android:src="@drawable/main_penlogo"
+            android:tint="@color/text_onIMG"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A4A4A4"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_header"
+        />
+
+
+    <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"
+
+        />
+
+
+    <TextView
+        android:id="@+id/pop_up_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새 글을 작성해 주세요!"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recycler"
+        android:textColor="@color/colorPrimary"
+        android:visibility="invisible"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".message.MessageActivity"
+
+    android:background="#ffffff"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/messageActivity_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="1dp"
+
+        android:padding="7dp">
+
+        <Button
+            android:id="@+id/messageActivity_previous"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/messageActivity_destinationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상대방"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+<View
+    android:id="@+id/messageActivity_topLine"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/messageActivity_constraint"
+    android:background="@color/light_gray"
+
+
+    />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/messageActivity_recyclerview"
+        android:layout_below="@id/messageActivity_topLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/messageActivity_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <EditText
+        android:layout_toLeftOf="@+id/messageActivity_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/black"
+        android:id="@+id/messageActivity_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"/>
+
+    <ImageView
+        android:id="@+id/messageActivity_button"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/directmessage64"
+
+        />
+
+</RelativeLayout>

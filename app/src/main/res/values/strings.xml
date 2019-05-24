@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">spread_thoughts_proj1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+
+    <string name="kakao_appkey">fffcc8bf013fc002f3a6731a8eee21fc</string>
+    <string name="kakao_scheme">kakaofffcc8bf013fc002f3a6731a8eee21fc</string>
+    <string name="kakaolink_host">kakaolink</string>
+
+    <string name= "default_channel_ID">Idonotknow</string>
+</resources>

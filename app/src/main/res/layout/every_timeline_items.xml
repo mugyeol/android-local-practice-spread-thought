@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/everytimelinelinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:weightSum="1"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/img_everytimeline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+
+                />
+            <FrameLayout
+                android:id="@+id/every_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/to_read_everytimeline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_marginBottom="50dp"
+                >
+                <TextView
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/tittle_everytimeline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="제목"
+                    android:textSize="25dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/text_onIMG"
+                    />
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/timelineevery_by"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/text_onIMG"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="By  "
+
+                        />
+
+                <TextView
+                    android:id="@+id/auther_everytimeline"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_onIMG"
+                    android:layout_height="wrap_content"
+                    android:text="무결"
+                    android:textSize="16dp"
+
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <View
+            android:id="@+id/Line_READ"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

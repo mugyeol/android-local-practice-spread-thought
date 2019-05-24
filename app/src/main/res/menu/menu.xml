@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/My_page"
+            android:icon="@drawable/listbar"
+            android:title="My_page" />
+        <item
+            android:id="@+id/Favorite"
+            android:icon="@drawable/thumbsup"
+            android:title="Favorite" />
+        <item
+            android:id="@+id/people"
+            android:icon="@drawable/people"
+            android:title="People" />
+        <item
+            android:id="@+id/direct_talk"
+            android:icon="@drawable/directmessage"
+            android:title="Direct Talk" />
+
+
+    </group>
+
+
+
+</menu>

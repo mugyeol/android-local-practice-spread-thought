@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+
+    >
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/chatActivity_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="1dp"
+
+        android:padding="7dp">
+
+        <Button
+            android:id="@+id/chatActivity_previous"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/previouspage"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/chatActivity_destinationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상대방"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+    
+    
+    <View
+        android:id="@+id/chatActivity_topLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/chatActivity_constraint"
+        android:background="@color/light_gray"
+
+
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="8dp"
+
+        android:id="@+id/chatActivity_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

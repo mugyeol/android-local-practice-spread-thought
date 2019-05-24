@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/appbar"
+    android:background="@color/TEXT_COMEOUT"
+
+
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_everybodyTimeline"
+            />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginTop="7dp">
+
+
+            <ImageView
+                android:id="@+id/go_mine"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/listbar"
+                android:tint="@color/text_onIMG"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/header_everyTIMELINE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="글, 생각"
+                android:textSize="20dp"
+                android:textColor="@color/text_onIMG"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

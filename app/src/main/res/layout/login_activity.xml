@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:background="#088A29"    >
+
+    <android.support.v7.widget.AppCompatImageView
+
+        android:id="@+id/loginpen"
+        android:layout_width="81dp"
+        android:layout_height="80dp"
+        android:src="@drawable/main_penlogo"
+        android:background="@drawable/penstyle_white"
+        android:tint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/linear_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linear_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="4"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/btn_kakao_login_customized"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_style"
+            android:layout_weight="1"
+            android:text="카카오톡으로 연결하기"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/go_to_simpleLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button_style"
+            android:text="이메일 패스워드 로그인"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <com.kakao.usermgmt.LoginButton
+
+    android:id="@+id/btn_kakao_login"
+
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+
+    />
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

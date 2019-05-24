@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "637500169043",
+    "firebase_url": "https://spreadthought-9cffb.firebaseio.com",
+    "project_id": "spreadthought-9cffb",
+    "storage_bucket": "spreadthought-9cffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637500169043:android:8d7dc136792e32a5",
+        "android_client_info": {
+          "package_name": "com.example.htpad.spread_thoughts_proj1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637500169043-ccbgton0o3v3nb8ris6iikl3r7ulcf17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvILcQbCRi2ZyecOAtIcSYHQxnv0ly5qw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

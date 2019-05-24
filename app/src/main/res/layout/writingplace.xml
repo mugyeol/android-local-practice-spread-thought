@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:padding="8dp"
+        android:layout_marginVertical="2dp"
+        >
+
+        <Button
+            android:id="@+id/cancel_WPLACE"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/cancel"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="글쓰기"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            />
+
+        <Button
+            android:id="@+id/complete_WPLACE"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/completewriting"
+            android:gravity="right"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A4A4A4"
+        />
+    <LinearLayout
+    android:layout_marginHorizontal="17dp"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/tittle_WPLACE"
+        android:paddingLeft="4dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:hint="제목"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="@drawable/edittextstyle"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_WPLACE"
+        android:layout_gravity="center_vertical"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/decorate_title"
+        android:scaleType="centerCrop"
+    />
+        <!--android:tint="#6E6E6E"-->
+
+</LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A4A4A4"
+        />
+<LinearLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    >
+
+    <EditText
+
+        android:id="@+id/contents_WPLACE"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+
+        android:background="@drawable/edittextstyle"
+        android:gravity="top"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:hint="당신의 생각을 적어주세요"
+        android:maxLength="5000"
+        />
+    <TextView
+        android:id="@+id/counting_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 / 2000"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:padding="1dp"
+        android:layout_marginBottom="2dp"
+
+        />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/TEXT_COMEOUT"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/image_DECO"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                />
+            <FrameLayout
+                android:id="@+id/tittleDeco_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/top_deco_tittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/cancel_DECO"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/cancel"
+                    android:tint="@color/text_onIMG"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="꾸미기"
+                    android:id="@+id/header_deco"
+                    android:textSize="16dp"
+                    android:textColor="@color/text_onIMG"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/complete_DECO"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/completewriting"
+                    android:gravity="right"
+                    android:tint="@color/text_onIMG"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+            <EditText
+                android:id="@+id/tittle_DECO"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/tittle_st_in_tittle_deco"
+                android:hint="제목"
+                android:textColor="@color/text_onIMG"
+                />
+
+
+        </FrameLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4"
+            >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="글 내용이 보여지는 영역입니다. "
+            android:textColor="#585858"
+            android:layout_weight="3"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="4"
+            android:layout_weight="0"
+            >
+            <ImageView
+                android:id="@+id/capture_DECO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera_img"
+                android:layout_weight="2"
+
+                />
+
+            <ImageView
+                android:id="@+id/gallery_DECO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gallery_img"
+                android:layout_weight="2"
+                />
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
